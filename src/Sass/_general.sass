@@ -1,0 +1,436 @@
+
+header
+	position: relative
+	height: 50px
+
+nav
+	position: fixed
+	height: 50px
+	background-color: #212121
+	width: 100%
+	z-index: 2
+/* НАШ ГАМБУРГЕР ДЛЯ МОБИЛОК  */
+.hamburger
+		display: none
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+	list-style: none
+
+	&_link
+		color: #ffffff
+		font-size: 15px
+		font-weight: 300
+
+	&_item
+		
+		border-right: 2px dotted black
+		padding-right: 28px
+		&:last-child
+			border-right: none
+	
+
+.subheader
+	position: absolute
+	margin-top: 50px
+	width: 100%
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+
+	&_logo
+		display: block
+		max-width: 100%
+		margin-top: 16px
+
+	&_official
+		margin-top: 6px
+		color: #ffffff
+		font-size: 13px
+		font-weight: 400
+		opacity: 0.5
+
+	&_call
+		text-align: right
+		margin-top: 19px
+		color: #ffffff
+		font-size: 12px
+		font-weight: 300
+
+	&_phone
+		display: block
+		text-align: right
+		margin-top: 8px
+		color: #ffffff
+		font-size: 22px
+		font-weight: 400
+		line-height: 12px
+		text-transform: uppercase
+
+	&_button
+		margin-top: 19px
+		width: 172px
+		height: 46px
+		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+		@include button_hover
+	
+
+.promo
+	min-height: 800px
+	padding: 150px 0 135px 0
+	background: url('../img/main_bg.jpg') center (center / cover) no-repeat
+
+	&_header
+		text-align: center
+		margin: 0
+		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 60px
+		line-height: 60px
+
+	&_subheader
+		text-align: center
+		margin: 0
+		margin-top: 21px
+		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 36px
+		line-height: 36px
+
+	&_descr
+		margin-top: 23px
+		text-align: center
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		line-height: 24px
+
+	&_button
+		display: block
+		margin: 0 auto
+		border-radius: 4px
+		margin-top: 118px
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		text-transform: uppercase
+		width: 259px
+		height: 63px
+		border: none
+		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+		@include button_hover
+
+.icons
+	min-height: 900px
+	padding: 79px 0 65px 0
+	&_wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
+
+	&_radius
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		border-radius: 100%
+		width: 113px
+		height: 113px
+		background-color: #1eacc7
+
+	&_descr_block
+		width: 343px
+
+	&_blue_subtitle
+		color: #1eacc7
+		font-size: 17px
+		font-weight: 400
+
+	&_description
+		color: #202020
+		font-size: 15px
+		font-weight: 300
+		line-height: 21px
+
+/* ------------3 КЛАССА КОПИРКИ ДЛЯ ЗАГОЛОВКОВ-------- */
+.advantage
+	position: relative
+	margin: 0 auto
+	text-align: center
+	padding: 5px 12px
+	width: 112px
+	height: 24px
+	background-color: #000000
+	color: #ffffff
+	font-size: 11px
+	font-weight: 300
+	text-transform: uppercase
+	z-index: 2
+	&_white
+		background-color: #ffffff
+		color: #000
+	
+
+.possibility
+	position: relative
+	text-align: center
+	margin-top: 38px
+	color: #222222
+	font-size: 38px
+	font-weight: 700
+	line-height: 48px
+	text-transform: uppercase
+	z-index: 2
+	&_choice
+		color: #ffffff
+	
+
+.subposibility
+	position: relative
+	margin-top: 19px
+	text-align: center
+	color: #222222
+	font-size: 17px
+	font-weight: 400
+	z-index: 2
+	&_white
+		color: #ffffff
+/* ----------------------------------------------- */
+
+.mobile
+	min-height: 863px
+	padding: 48px 0 80px 0
+	background: url('../img/bg_plus.png') center center/cover no-repeat
+	.row
+		margin-top: 32px
+	&_wrapper
+		position: relative
+		margin: 0 auto  
+		margin-bottom: 19px
+		padding-top: 92px 
+		width: 320px
+		height: 280px
+		&_1  
+			background: url('../img/pictures/pic1.png') center center/cover no-repeat
+		&_2  
+			background: url('../img/pictures/pic2.png') center center/cover no-repeat
+		&_3  
+			background: url('../img/pictures/pic3.png') center center/cover no-repeat
+		&_4  
+			background: url('../img/pictures/pic4.png') center center/cover no-repeat
+		&_5  
+			background: url('../img/pictures/pic5.png') center center/cover no-repeat
+		&_6  
+			background: url('../img/pictures/pic6.png') center center/cover no-repeat
+	&_description
+		text-align: center
+		color: #ffffff
+		font-size: 24px
+		font-weight: 400
+		line-height: 31px
+		text-transform: uppercase
+	&_plus
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		bottom: 35px
+		left: 50% 
+		transform: translateX(-50%)
+		border-radius: 100%
+		width: 26px
+		height: 26px
+		background-color: #000000
+		cursor: pointer
+		&::before
+			content: ''
+			display: block 		
+			width: 14px
+			height: 2px
+			background-color: $main-color
+			transition: 0.5s all		
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			height: 14px
+			width: 2px
+			background-color: $main-color
+			transition: 0.5s all
+			&:hover
+				&::before, &::after
+					background-color: $second-color
+	
+/* -------СЛЕДУЮЩАЯ СЕКЦИЯ С МАШИНОЙ ----*/
+.car
+	position: relative
+	min-height: 896px
+	padding: 57px 0 138px 0
+	background: url(../img/bg_plus.png) center center/cover no-repeat
+	&_img
+		position: relative
+		display: block		
+		margin: 56px auto 0 auto
+		z-index: 2
+	&_descr
+		text-align: center
+		margin-top: 4px
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+	&_black_bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 499px
+		background-color: #070716
+		z-index: 1
+
+			/* СЕКЦИЯ С ГАЛОЧКАМИ */
+.check_mark
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
+		&_no_margin_bottom
+			margin-bottom: 0px
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			color: #222222
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url('../icons/mark.png') center center/cover no-repeat
+	&_description
+			color: #1ca8c3
+			font-weight: 300
+	.warning
+			.check_mark_title
+				color: $second-color
+			.check_mark_list		
+				li
+					&::before
+						background: url('../icons/redMark.png') center center/cover no-repeat
+			
+/* СЕКЦИЯ С КАРТОЙ МИРА */	
+.world
+	min-height: 717px
+	padding: 49px 0
+	background: url('../img/bgmap.png') center center/cover no-repeat			
+	&_cities
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 486px
+		color: #1fbad6
+		font-size: 15px
+		font-weight: 400
+		text-transform: uppercase
+
+/* FOOTER Инстаграм, твиттер*/	
+.footer
+	min-height: 156px
+	padding: 14px 0 39px 0		
+	&_line
+		margin: 0 auto
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i 
+				color: #fff
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
+
+	&_mobile
+		img
+			width: 95px
+.xs-visible
+	display: none
+	
+			
